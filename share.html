@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Shared Note</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/reset.css" type="text/css" rel="stylesheet">
+	<link href="css/all.css" type="text/css" rel="stylesheet">
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+	<link href="stickyNotes.css" type="text/css" rel="stylesheet">
+	<link rel="manifest" href="manifest.json">
+
+    <!-- Android -->
+    <meta name="theme-color" content="#2fa9d8">
+
+    <!-- IOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="apple-touch-icon" href="img/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-152x152.png">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="StickyNotes">
+</head>
+<body>
+
+	<div class="header shared-note" id="header">
+		<div class="container">
+			<div class="col-md-3 col-sm-5">
+				<a href="index.html"><h2>Shared Note</h2></a>
+			</div>
+			<div class="col-md-6 col-md-push-3 col-sm-7">
+				<div class="hold-img">
+					<img src="img/Group 12.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="notes" class="notes">
+		<div class="container">
+			<!--Start The Loop-->
+			<shared-note></shared-note>
+		</div>
+	</div>
+	
+	<!--Scripts-->
+	<script src="js/httpVueLoader.js" charset="utf-8"></script>
+	<script src="js/vue.min.js" charset="utf-8"></script>
+	<script src="js/stickyNotes.js" charset="utf-8"></script>
+</body>
+</html>
